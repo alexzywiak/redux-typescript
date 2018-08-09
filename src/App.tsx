@@ -1,12 +1,8 @@
 import * as React from 'react';
 import './App.css';
+import { ContainerProps } from './AppContainer';
 
-interface IAppProps {
-  count?: number;
-  incrementCount?: () => any;
-}
-
-class App extends React.Component<IAppProps> {
+class App extends React.Component<ContainerProps> {
   public render() {
     const { count, incrementCount } = this.props;
     return (
